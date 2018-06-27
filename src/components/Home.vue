@@ -59,11 +59,6 @@ export default {
     UiSorting
   },
   props: {
-    date: {
-      type: String,
-      required: true,
-      default: ''
-    },
     languages: {
       type: String,
       required: false,
@@ -95,7 +90,9 @@ export default {
 
     counter () {
       if (this.repositoriesList && this.repositoriesList.total_count) {
-        return `${this.repositoriesList.total_count.toLocaleString()} repositories found`
+        const count = this.repositoriesList.total_count.toLocaleString()
+
+        return `${count} repositories found`
       }
 
       if (this.repositoriesList.error) {
@@ -119,7 +116,9 @@ export default {
 
     totalPages () {
       if (this.repositoriesList && this.repositoriesList.total_count) {
-        return Math.ceil(this.repositoriesList.total_count / this.repositoriesList.items.length)
+        const repos = this.repositoriesList
+
+        return Math.ceil(repos.total_count / repos.items.length)
       }
     }
   },
@@ -189,7 +188,7 @@ export default {
     setSorting (sort) {
       this.setRepositoriesSorting(sort)
         .then(() => this.$router.push({
-          name: 'RepositoriesList',
+          name: 'Home',
           query: this.currentQueryParams
         }))
     }
