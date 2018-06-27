@@ -1,5 +1,5 @@
 <template lang="pug">
-  select(v-model='selected', @change='selectSorting')
+  select(v-model='model', @change='selectSorting')
     option(value='').
       Select...
     template(v-for='(option, key) in options')
@@ -24,6 +24,7 @@ export default {
 
   data () {
     return {
+      model: this.selected,
       options: [
         {
           value: ['stars', 'desc'],
@@ -49,14 +50,13 @@ export default {
           value: ['updated', 'asc'],
           title: 'Least recently updated'
         }
-      ],
-      sort: this.sorting
+      ]
     }
   },
 
   methods: {
     selectSorting () {
-      this.$emit('change', this.selected)
+      this.$emit('change', this.model)
     }
   }
 }

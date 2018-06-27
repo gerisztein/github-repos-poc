@@ -13,7 +13,6 @@ export default new Router({
       name: 'Home',
       component: Home,
       props: route => ({
-        date: route.query.date,
         languages: route.query.langs,
         order: route.query.order,
         page: +route.query.page,
