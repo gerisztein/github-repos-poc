@@ -30,12 +30,10 @@ const actions = {
       langs: '',
       order: 'desc',
       page: 1,
-      date: lastWeek,
       sort: 'stars'
     }
 
     if (Object.keys(params).length) {
-      query.date = params.date
       query.order = params.order
       query.page = params.page
       query.sort = params.sort
