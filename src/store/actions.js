@@ -14,15 +14,14 @@ const actions = {
   },
 
   getStarredRepos ({ commit, dispatch }) {
-    let repos = window.localStorage.getItem('starredRepos')
+    const repos = window.localStorage.getItem('starredRepos')
+    let formatted = []
 
     if (repos) {
-      repos = JSON.parse(repos)
-    } else {
-      repos = []
+      formatted = JSON.parse(repos)
     }
 
-    dispatch('setStarredRepos', repos)
+    dispatch('setStarredRepos', formatted)
   },
 
   setQuery ({ commit }, params) {
@@ -51,7 +50,6 @@ const actions = {
     }
 
     if (params.langs) {
-      console.log('params.langs', params)
       queryParams.q = `${queryParams.q} language=${params.langs}`
       query.langs = params.langs
     }

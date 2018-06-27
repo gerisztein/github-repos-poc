@@ -62,10 +62,6 @@ export default {
     }
   },
 
-  mounted () {
-    console.log(this.options)
-  },
-
   methods: {
     selectFilters () {
       this.$emit('change', this.model)
@@ -114,5 +110,4 @@ export default {
     span
       font-size .75rem
       margin-left 8px
-
 </style>
