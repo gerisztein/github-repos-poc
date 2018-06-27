@@ -1,0 +1,6 @@
+export const SET_LIST = 'SET_LIST'
+export const SET_QUERY = 'SET_QUERY'
+export const SET_QUERY_PARAMS = 'SET_QUERY_PARAMS'
+export const SET_STARRED_LIST = 'SET_STARRED_LIST'
+export const SET_STARRED_COUNT = 'SET_STARRED_COUNT'
+export const SET_STARRED_SORT = 'SET_STARRED_SORT'
