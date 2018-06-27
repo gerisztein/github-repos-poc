@@ -19,11 +19,12 @@ module.exports = {
     cssSourceMap: true
   },
 
+  // GH-Pages deploy
   build: {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '//gerisztein.github.io/github-repos-poc',
+    assetsPublicPath: 'https://gerisztein.github.io/github-repos-poc',
     productionSourceMap: false,
     devtool: '#source-map',
     productionGzip: false,
