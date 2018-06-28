@@ -132,7 +132,8 @@ export default {
     formatNumber: (value) => value.toLocaleString(),
 
     checkStar () {
-      let repos = window.localStorage.getItem('starredRepos') || []
+      const localStorage = window.localStorage
+      let repos = localStorage.getItem('starredRepos') || []
 
       if (repos && repos.length) {
         repos = JSON.parse(repos)
@@ -142,12 +143,11 @@ export default {
     },
 
     starRepo () {
-      let repos = this.starredRepos
-      console.log('repos', repos)
+      let repos = this.starredRepos || []
       let repo = null
       let isStarred = false
 
-      if (repos) {
+      if (repos && repos.length) {
         isStarred = repos.some(i => i.id === this.id)
       }
 
