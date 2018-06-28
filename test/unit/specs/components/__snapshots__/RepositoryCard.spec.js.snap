@@ -23,6 +23,6 @@ exports[`RepositoryCard.vue render matches snapshot 1`] = `
     </div>
     <p class="card__description">Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.</p>
     <footer>
-        <!----><span class="card__updated">Last update: June 27, 2018 8:04 PM</span></footer>
+        <!----><span class="card__updated">Last update: June 27, 2018 6:04 PM</span></footer>
 </article>
 `;
