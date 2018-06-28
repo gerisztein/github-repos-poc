@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepositoryCard.vue render matches snapshot 1`] = `
+<article class="card">
+    <header>
+        <a href="https://github.com/sebastianruder" target="_blank">
+            <img src="https://avatars3.githubusercontent.com/u/6792642?v=4" title="sebastianruder" class="card__avatar">
+        </a>
+        <h1 class="card__title">
+            <a href="https://github.com/sebastianruder/NLP-progress">sebastianruder/sebastianruder/NLP-progress</a>
+        </h1>
+    </header>
+    <div class="card__stats">
+        <div class="card__stat card__stat--star">
+            <!----><span class="card__stat--count">3,024</span></div>
+        <div class="card__stat">
+            <!----><span class="card__stat--count">3,024</span></div>
+        <div class="card__stat">
+            <!----><span class="card__stat--count">306</span></div>
+        <div class="card__tags">
+            <!---->
+        </div>
+    </div>
+    <p class="card__description">Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.</p>
+    <footer>
+        <!----><span class="card__updated">Last update: June 27, 2018 8:04 PM</span></footer>
+</article>
+`;
