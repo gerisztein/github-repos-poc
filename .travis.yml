@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "9"
+  - "10"
 dist: trusty
 sudo: false
 
@@ -17,6 +18,7 @@ install:
 
 script:
   - yarn install
+  - yarn test
   - yarn build
 
 deploy:

@@ -9,6 +9,7 @@
 
 <script>
 import UiTabs from './components/ui/UiTabs'
+
 export default {
   name: 'App',
   components: {

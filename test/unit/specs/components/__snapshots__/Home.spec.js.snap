@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.vue render matches snapshot 1`] = `
+<section class="repositories">
+    <header>
+        <div class="counter">346,172 repositories found</div>
+        <!---->
+    </header>
+    <div class="repositories__container">
+        <!---->
+        <section class="list">
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+        </section>
+    </div>
+</section>
+`;
